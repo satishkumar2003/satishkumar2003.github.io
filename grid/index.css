@@ -1,0 +1,92 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;    
+}
+
+html,body {
+    height:100%;
+    width:100%;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+.landing {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("../windmill.png");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.gallery-home {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(46, 139, 86, 0.774);
+    padding: 2em;
+}
+
+.gallery-home>h1 {
+    font-size: 5em;
+    font-family: 'Courier New';
+    color: black;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.spans-cols-2 {
+    grid-column: span 2;
+}
+
+.spans-rows-2 {
+    grid-row: span 2;
+}
+
+.photos {
+    padding: 20px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+.event {
+    width: 80%;
+    background-color:darkcyan;
+    border: 2px solid black;
+    padding: 20px;
+    margin-inline: auto;
+    margin-bottom:20px;
+    display: grid;
+    grid-template-columns: repeat(3,35vh);
+    grid-template-rows: repeat(3,30vh);
+    justify-content: center;
+    gap: 10px;
+}
+
+.event>.image{
+    background-color: #252424;
+    width: 100%;
+    padding: 10px;
+}
+
+.image>img {
+    width: 40%;
+    display:block;
+    margin-inline: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image>p {
+    color: rgb(116, 200, 240);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+}
